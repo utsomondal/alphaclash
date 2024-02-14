@@ -37,3 +37,16 @@ function setElementValueById(elementId, value) {
     const element = document.getElementById(elementId);
     element.innerText = value;
 }
+
+function gameOver() {
+    hideElementById('playground');
+    showElementById('scoreboard');
+    const finalScore = getElementValueById('current-score');
+    setElementValueById('final-score', finalScore);
+}
+
+function getElementTextById(elementId){
+    const element=document.getElementById(elementId);
+    const text=element.innerText;
+    return text;
+}

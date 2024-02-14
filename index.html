@@ -90,13 +90,14 @@
             </div>
         </section>
         <!-- score-board -->
-        <section class="scoreboard hidden flex flex-col justify-center items-center min-h-screen gap-5">
+        <section id="scoreboard" class="hidden flex flex-col justify-center items-center min-h-screen gap-5">
             <div class="text-white text-center bg-gradient-to-r from-[#FFFFFF33] to-[#989797] p-10 space-y-5 rounded-xl">
+                <h2 class="text-3xl">Game Over!</h2>
                 <h1 class="text-7xl text-poppins">
                     <span class="font-extrabold">Score:</span>
-                    <span class="font-medium">0</span>
+                    <span id="final-score" class="font-medium">0</span>
                 </h1>
-                <button class="btn text-black font-semibold text-xl">Play Again</button>
+                <button onclick="switchToPlayground()" class="btn text-black font-semibold text-xl">Play Again</button>
                 <p class="text-poppins text-xl font-medium">Practice will make you Pro</p>
             </div>
         </section>
